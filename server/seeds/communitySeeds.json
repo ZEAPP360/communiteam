@@ -1,0 +1,18 @@
+[
+    {
+        "name": "communitya",
+        "location": "brisbane"
+    },
+    {
+        "name": "communityb",
+        "location": "adelaide"
+    },
+    {
+        "name": "communityc",
+        "location": "sydney"
+    },
+    {
+        "name": "communityd",
+        "location": "melbourne"
+    }
+]

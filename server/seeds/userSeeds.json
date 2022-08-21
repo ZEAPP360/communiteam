@@ -1,0 +1,29 @@
+[
+  {
+    "username": "elliot",
+    "email": "elliot@email.com",
+    "password": "password01",
+    "location": "brisbane",
+    "community": "communitya"
+  },
+  {
+    "username": "dory",
+    "email": "dory@email.com",
+    "password": "password01",
+    "location": "sydney",
+    "community": "communityc"
+  },
+  {
+    "username": "drew",
+    "email": "drew@email.com",
+    "password": "password01",
+    "location": "adelaide",
+    "community": "communityb"
+  },
+  {
+    "username": "portia",
+    "email": "portia@email.com",
+    "password": "password01",
+    "location": "melbourne"
+  }
+]
