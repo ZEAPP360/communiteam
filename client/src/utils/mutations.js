@@ -23,3 +23,14 @@ mutation Login($email: String!, $password: String!) {
     }
   }
 }`
+export const UPDATE_USER = gql`
+mutation UpdateUser($community: String!, $location: String!) {
+  updateUser(community: $community, location: $location) {
+    token
+    user {
+      _id
+      community
+      location
+    }
+  }
+}`
