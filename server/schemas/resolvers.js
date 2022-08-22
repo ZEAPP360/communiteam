@@ -28,10 +28,10 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+    //add a updateUser funtion and  find a user using id and update data like community and location 
     updateUser: async (parent, { _id ,community,location,}) => {
       let id = new mongoose.Types.ObjectId(_id)
       const user = await User.findOne({id});
-      console.log(user)
       const updateUser = await User.updateOne({community,location})
       const token = signToken(updateUser);
       return { token,updateUser } ;

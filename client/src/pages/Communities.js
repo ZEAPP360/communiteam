@@ -8,6 +8,7 @@ import { UPDATE_USER } from "../utils/mutations";
 const Communities = () => {
   const [select ,setSelected] = useState()
   const { loading, data } = useQuery(QUERY_COMMUNITIES);
+  // The data is transfer into mutation file
   const [updateUser, { error }] = useMutation(UPDATE_USER);
 
   if (loading) {
@@ -17,11 +18,12 @@ const Communities = () => {
   const communities = data.communities || [];
   const handlerSubmit=async(e)=>{
     e.preventDefault()
+    // destructure data into select and used in items 
     const {_id,location,name} = select
-  let items = {
+  let items = { // send items data into  updateuser under variable
     _id,
     location,
-    community:name
+    community:name //change name into community 
   }
     try {
       const { data } = await updateUser({
@@ -47,6 +49,7 @@ const Communities = () => {
          <p className="card-text">
          {el.location}
          </p>
+                                           {/* the  object data is send into setSelected veriable */}
          <button href="#" type="submit" onClick={()=>setSelected(el)} className="btn btn-primary">
          Add
          </button>

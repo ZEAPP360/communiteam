@@ -23,6 +23,7 @@ mutation Login($email: String!, $password: String!) {
     }
   }
 }`
+// make a link to resolvers
 export const UPDATE_USER = gql`
 mutation UpdateUser($community: String!, $location: String!) {
   updateUser(community: $community, location: $location) {

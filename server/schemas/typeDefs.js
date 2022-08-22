@@ -34,5 +34,5 @@ const typeDefs = gql`
     updateUser(location: String!,community:String!): Auth
   }
 `;
-
+// add a line updateUser into type Mutation
 module.exports = typeDefs;
